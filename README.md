@@ -1,5 +1,6 @@
 <h1 align="center">💤NvChad💤</h1>
-<span align="center">A starter template for nvchad.</span>
+<h4 align="center">A starter template for nvchad.</h4>
+
 ## Showcase
 ![](./assets/home.png)
 
