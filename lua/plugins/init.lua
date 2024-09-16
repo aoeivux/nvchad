@@ -14,36 +14,31 @@ return {
 
 	{
 		"nvim-treesitter/nvim-treesitter",
-    event = { "BufReadPost", "BufNewFile" },
-    cmd = { "TSInstall", "TSBufEnable", "TSBufDisable", "TSModuleInfo" },
-    build = ":TSUpdate",
 		opts = require "configs.treesitter",
 	},
 
 	{
 		"nvim-tree/nvim-tree.lua",
-    cmd = { "NvimTreeToggle", "NvimTreeFocus" },
 		config = function()
 			require "configs.nvimtree"
 		end,
 	},
 
 	{
-		"williamboman/mason.nvim",
-    cmd = { "Mason", "MasonInstall", "MasonInstallAll", "MasonUpdate" },
-		opts = require "configs.mason",
-	},
-
-	{
 		"nvim-telescope/telescope.nvim",
-    cmd = "Telescope",
-		opts = require "configs.telescope",
+		opts = function()
+			return require "configs.telescope"
+		end 
 	},
 
+	-- can't use opts = require "config.cmp"
+	-- because it can't lazy loading cmp while start up.
+	-- write bleow opts = fun(parm1, parm2) at least 2 parm.
 	{
 		"hrsh7th/nvim-cmp",
-    event = "InsertEnter",
-		opts = require "configs.cmp",
+		opts = function()
+			return require "configs.cmp"
+		end,
 	},
 
 }

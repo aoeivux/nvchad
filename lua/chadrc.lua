@@ -58,15 +58,12 @@ M.ui = {
                   "Hello, master!"},
         load_on_startup = true,
         -- stylua: ignore
-        buttons = {{"  Find All Files", "Spc f a", "Telescope find_all_files"},
-                   {"  Find Buffer", "Spc f b", "Telescope find_all_buffers"},
+        buttons = {{"  Find File", "Spc f f", "Telescope find_files"},
                    {"  Bookmarks", "Spc m a", "Telescope marks"},
-                   {"  Find Help Pages", "Spc f h", "Telescope find_help_pages"},
-                   {"  Live Grep", "Spc f w", "Telescope Live Grep"},
+                   {"  Live Grep", "Spc f w", "Telescope live_grep"},
                    {"󰈚  Recent Files", "Spc f r", "Telescope oldfiles"},
-                   {"󰈚  In_Recent_Buffer", "Spc f z", "Telescope find_in_recent_buffers"},
                    {"  Themes", "Spc t h", "Telescope themes"}, {"  Mappings", "Spc c h", "NvCheatsheet"}}
-    },
+    }
 }
 
 M.term = {

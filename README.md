@@ -2,15 +2,15 @@
 
 A starter template for nvchad.
 
-![HomePage](Screenshots/homepage.png)
-
-![lazyvim](Screenshots/lazyvim.png)
-
-![Page](Screenshots/page.png)
-
-## Requirements
+![](./assets/home.png)
 
 
+
+## Requirements![](./assets/Context.png)
+
+![](./assets/term.png)
+
+![](./assets/float-term.png)
 
 - `Windows`
 
