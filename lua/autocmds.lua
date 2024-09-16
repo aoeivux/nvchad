@@ -11,7 +11,7 @@ vim.api.nvim_create_autocmd("VimEnter", {
     -- Function
     vim.cmd('hi Function gui=italic')
     -- Number
-    vim.cmd('hi Number')
+    vim.cmd('hi Number gui=italic')
     -- Type
     vim.cmd('hi Type gui=bold')
   end
@@ -36,4 +36,3 @@ local function open_nvim_tree(data)
 end
 
 vim.api.nvim_create_autocmd({ "VimEnter" }, { callback = open_nvim_tree })
-
