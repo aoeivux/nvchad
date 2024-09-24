@@ -9,6 +9,8 @@ g.loaded_netrw = 1
 g.loaded_netrwPlugin = 1
 
 o.shell = "pwsh.exe"
+o.tabstop = 4
+o.shiftwidth = 4
 
 opt.termguicolors = true
 opt.swapfile = false
