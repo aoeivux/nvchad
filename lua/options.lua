@@ -4,6 +4,7 @@ local opt = vim.opt
 local o = vim.o
 local g = vim.g
 
+
 g.mapleader = " "
 g.loaded_netrw = 1
 g.loaded_netrwPlugin = 1
@@ -15,3 +16,5 @@ o.shiftwidth = 4
 opt.termguicolors = true
 opt.swapfile = false
 
+opt.foldmethod = "expr"
+opt.foldexpr = "nvim_treesitter#foldexpr()"
