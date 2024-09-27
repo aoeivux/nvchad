@@ -5,14 +5,14 @@
 local M = {}
 
 M.base46 = {
-    theme = "gruvbox",
+    theme = "chadracula",
     -- hl_override = {},
     -- hl_add = {},
     -- below default
     -- integrations = {},
     -- changed_themes = {},
     transparency = false,
-    -- theme_toggle = { "onedark", "one_light" },
+    -- theme_toggle = { "chadracula", "one_light" },
 }
 
 M.ui = {
@@ -98,7 +98,7 @@ M.cheatsheet = {
 
 M.mason = {
     cmd = true,
-    pkgs = {"clangd", "gopls"}
+    pkgs = {"clangd", "gopls", "pyright"}
 }
 
 return M
