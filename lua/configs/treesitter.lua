@@ -5,5 +5,12 @@ return {
 		"vimdoc",
 		"c",
 		"cpp",
+        "java",
+        "xml",
+        "yaml",
+        "html",
+        "css",
+        "javascript",
+        "typescript"
 	},
 }

@@ -98,7 +98,7 @@ M.cheatsheet = {
 
 M.mason = {
     cmd = true,
-    pkgs = {"clangd", "gopls", "pyright"}
+    -- pkgs = { "gopls", "pyright", "jdtls" }
 }
 
 return M
